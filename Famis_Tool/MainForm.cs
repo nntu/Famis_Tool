@@ -65,7 +65,7 @@ namespace Famis_Tool
                                         Diachi = (values[9].Trim()),
                                         SHTam = values[10].Trim(),
                                         XuDong = values[11].Trim(),
-                                        SoTo = f.Replace(".txt","")
+                                        SoTo = Path.GetFileName(f).Replace(".txt","").Replace("dc", "")
 
                                     });
                                     sodong++;
